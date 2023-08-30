@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/view_Conteiner"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MainActivity">
+
+
+    <view
+        android:id="@+id/view_Principal"
+        class="androidx.constraintlayout.widget.ConstraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/Fondo"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintVertical_bias="0.9"
+
+        />
+
+    <EditText
+        android:id="@+id/data1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        app:layout_constraintVertical_bias="0.1"
+        android:autofillHints="name"
+        android:background="@android:color/background_light"
+        android:cursorVisible="true"
+        android:hint="@string/Text_Hind"
+        android:inputType="text"
+
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+
+    <EditText
+        android:id="@+id/data2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/data1"        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="10dp"
+        android:paddingLeft="10dp"
+        app:layout_constraintVertical_bias="0.2"
+        android:autofillHints="name"
+        android:background="@android:color/background_light"
+        android:cursorVisible="true"
+        android:hint="@string/Text_Hind"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/btn_Comp"
+        app:layout_constraintBottom_toBottomOf="@id/view_Conteiner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/data2"
+        app:layout_constraintVertical_bias="0.2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+
+        android:text="@string/btn_label1"
+
+        tools:ignore="TouchTargetSizeCheck" />
+
+
+    <TextView
+        android:id="@+id/view_Resulta"
+        app:layout_constraintBottom_toBottomOf="@+id/view_Principal"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Comp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+
+        tools:text="sdjsakdksa" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Integrador</string>
+    <string name="btn_label1">Comparar</string>
+    <string name="Text_Hind">Escriba aqui el texto</string>
+    <string name="viewResulta"></string>
+    <string name="app_Label">Trabajo Integrador</string>
+
+
+</resources>
